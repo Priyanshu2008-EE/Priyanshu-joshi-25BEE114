@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    unsigned long long bytes;
+    double kilobytes, megabytes, gigabytes;
+
+    printf("Enter size in bytes: ");
+    scanf("%llu", &bytes);
+
+    
+    kilobytes = bytes / 1024.0;
+    megabytes = bytes / (1024.0 * 1024.0);
+    gigabytes = bytes / (1024.0 * 1024.0 * 1024.0);
+
+    
+    printf("\nConversions:\n");
+    printf("Kilobytes: %.2f KB\n", kilobytes);
+    printf("Megabytes: %.2f MB\n", megabytes);
+    printf("Gigabytes: %.2f GB\n", gigabytes);
+
+    return 0;
+}
+
