@@ -3,18 +3,14 @@
 int main() {
     float gross_sales, discount, net_sales;
 
-    // Input gross sales
     printf("Enter gross sales: ");
     scanf("%f", &gross_sales);
 
-    // Calculate 10% discount
     discount = 0.10 * gross_sales;
 
-    // Calculate net sales
     net_sales = gross_sales - discount;
-
-    // Display result
     printf("Net sales: %.2f\n", net_sales);
 
     return 0;
+
 }
